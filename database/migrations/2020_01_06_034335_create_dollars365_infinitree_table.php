@@ -13,15 +13,13 @@ class CreateInfinitreeTable extends Migration
      */
     public function up()
     {
-        Schema::create('infinitree', function (Blueprint $table) {
+        Schema::create('dollars365_infinitree', function (Blueprint $table) {
             $table->bigIncrements('id');
             
             $table->integer('parent_id')->default(0);
             $table->integer('order')->default(0);
             $table->string('title', 50);
-            $table->string('icon', 50);
-            $table->string('uri', 50)->nullable();
-            $table->string('permission')->nullable();
+
             
             $table->timestamps();
         });
@@ -34,6 +32,6 @@ class CreateInfinitreeTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('infinitree');
+        Schema::dropIfExists('dollars365_infinitree');
     }
 }
