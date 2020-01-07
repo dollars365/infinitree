@@ -1,9 +1,9 @@
 {
-    "name": "laravel-admin-ext/infinitree",
+    "name": "dollars365/infinitree",
     "description": "description...",
     "type": "library",
     "keywords": ["laravel-admin", "extension"],
-    "homepage": "https://github.com/laravel-admin-ext/infinitree",
+    "homepage": "https://github.com/dollars365/infinitree",
     "license": "MIT",
     "authors": [
         {
