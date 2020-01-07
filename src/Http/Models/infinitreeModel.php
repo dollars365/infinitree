@@ -21,7 +21,7 @@ class infinitreeModel extends Model
      *
      * @var array
      */
-    protected $fillable = ['parent_id', 'order', 'title', 'icon', 'uri', 'permission'];
+    protected $fillable = ['parent_id', 'order', 'title'];
     
     /**
      * Create a new Eloquent model instance.
@@ -34,7 +34,7 @@ class infinitreeModel extends Model
         
         $this->setConnection($connection);
         
-        $this->setTable("infinitree");
+        $this->setTable("dollars365_infinitree");
         
         parent::__construct($attributes);
     }
